@@ -68,8 +68,9 @@ func postRequest(LabURL string, value string, session string) {
 }
 
 func main() {
-	LabURL := "https://ac8b1f651fe604e6c0ae6196009c00e1.web-security-academy.net"
-
+	
+	// Fill these
+	LabURL := ""
 	session := ""
 
 	bruteforce_mfacode(LabURL, session)
