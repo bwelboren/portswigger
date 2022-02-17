@@ -42,7 +42,7 @@ func SendLoginRequest(LabURL string, username string, password string) {
 
 	if strings.Contains(string(body), "You have made too many incorrect login attempts. Please try again in 1 minute(s).") {
 		fmt.Println("We are blocked")
-    os.Exit(0)
+    		os.Exit(0)
 	}
 
 	if resp.StatusCode == 302 && username != "wiener" {
